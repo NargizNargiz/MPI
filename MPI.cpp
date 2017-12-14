@@ -15,11 +15,11 @@ int main(int argc, char **argv){
         MPI_Init(&argc, &argv);
         MPI_Comm_size(MPI_COMM_WORLD, &size);
         MPI_Comm_rank(MPI_COMM_WORLD, &MyP);
- //     cout << argv[1] << endl;
- //     ifstream file(argv[1]);
- //     cout << argv[1] <<endl;
- //     file >> M;
-        M = 256;
+        cout << argv[1] << endl;
+        ifstream file(argv[1]);
+        cout << argv[1] <<endl;
+        file >> M;
+        //M = 256;
         cout << M << endl;
         N = M/size;// size = 4, N = 2, M = 4
         double **matrix = new double *[N];
