@@ -69,7 +69,7 @@ int main(int argc, char **argv){
                                         for (int i = 0; i < N; i++)
                                                 for (int j = 0;j < M; j++){
                                                         matrix[i][j] = matrix[i][j] - matrix[i][N*p+k]*V[j];
-                                                        E[i][j] = E[i][j] - E[i][N*p +k]*V[j];
+                                                        E[i][j] = E[i][j] - E[i][N*p +k]*V1[j];
                                                 }
                                 }
                         }
@@ -94,7 +94,7 @@ int main(int argc, char **argv){
                                         for (int i = N - 1; i >= 0; i--)
                                                 for (int j = 0; j < M; j++){
                                                         matrix[i][j]= matrix[i][j] - matrix[i][N*p+k]*V[j];
-                                                        E[i][j]= E[i][j] - E[i][N*p+k]*V[j];
+                                                        E[i][j]= E[i][j] - E[i][N*p+k]*V1[j];
                                                 }
                                 }
                         }
